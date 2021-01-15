@@ -10,7 +10,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 df = pd.read_csv('schools_combined.csv')
-my_page = st.sidebar.radio('Page Navigation', ['page 1', 'page 2', 'page 3', 'page 4', 'page 5'])
+my_page = st.sidebar.radio('Page Navigation', ['page 1', 'page 2', 'page 3', 'page 4'])
 
 if my_page == 'page 1':
     st.title("Data")
