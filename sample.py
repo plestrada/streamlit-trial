@@ -47,7 +47,7 @@ elif my_page == 'page 2':
     st.pyplot(fig)
 
 elif my_page == 'page 3':
-    st.title("Geospatioal Analysis of Schools")
+    st.title("Geospatial Analysis of Schools")
     schools = gpd.read_file('./phl_schp_deped/phl_schp_deped.shp')
     schools["x"] = schools.geometry.centroid.x
     schools["y"] = schools.geometry.centroid.y
@@ -71,7 +71,7 @@ elif my_page == 'page 3':
     folium_static(mymap)
     
 elif my_page == 'page 4':
-    st.title("Geospatioal Analysis of Schools : st.map")
+    st.title("Geospatial Analysis of Schools : st.map")
     schools = gpd.read_file('./phl_schp_deped/phl_schp_deped.shp')
     schools["lon"] = schools.geometry.centroid.x
     schools["lat"] = schools.geometry.centroid.y
